@@ -1,0 +1,28 @@
+.page { padding: 60px 0 100px; }
+.hero { text-align: center; padding: 60px 24px 40px; position: relative; }
+.title { font-size: 54px; font-weight: 800; margin-bottom: 16px; }
+.subtitle { font-size: 18px; color: var(--text-secondary); max-width: 580px; margin: 0 auto; line-height: 1.6; }
+
+/* Role Cards */
+.rolesGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-bottom: 60px; }
+.roleCard { padding: 28px 20px; text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 14px; transition: var(--transition-smooth); }
+.roleCard.selected { border-color: var(--accent-violet) !important; background: rgba(124,58,237,0.1) !important; }
+.roleIcon { width: 52px; height: 52px; border-radius: 14px; background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.2); display: flex; align-items: center; justify-content: center; color: var(--accent-violet); transition: var(--transition-smooth); }
+.roleCard.selected .roleIcon { background: rgba(124,58,237,0.25); }
+.roleCard:hover .roleIcon { transform: scale(1.1); }
+.roleTitle { font-size: 14px; font-weight: 700; color: var(--text-main); }
+.roleDesc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+/* Form */
+.formWrapper { max-width: 600px; margin: 0 auto; padding: 40px; }
+.formTitle { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.formSubtitle { font-size: 14px; color: var(--text-secondary); margin-bottom: 28px; }
+.formGroup { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.formGroup label { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+@media (max-width: 1024px) { .rolesGrid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) {
+  .rolesGrid { grid-template-columns: repeat(2, 1fr); }
+  .formRow { grid-template-columns: 1fr; }
+}

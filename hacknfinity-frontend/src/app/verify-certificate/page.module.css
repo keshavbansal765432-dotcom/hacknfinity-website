@@ -1,0 +1,30 @@
+.page { padding: 60px 0 100px; }
+.hero { text-align: center; padding: 60px 24px 40px; position: relative; }
+.title { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+.subtitle { font-size: 18px; color: var(--text-secondary); max-width: 560px; margin: 0 auto; line-height: 1.6; }
+
+/* Search Form */
+.searchBox { max-width: 560px; margin: 40px auto 0; padding: 32px; }
+.searchTitle { font-size: 20px; font-weight: 700; margin-bottom: 20px; }
+.inputRow { display: flex; gap: 12px; }
+.inputRow input { flex: 1; }
+
+/* Result Display */
+.resultCard { margin: 24px auto; max-width: 560px; padding: 32px; }
+.resultIcon { font-size: 48px; margin-bottom: 16px; }
+.resultTitle { font-size: 22px; font-weight: 700; margin-bottom: 16px; }
+.metaGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+.metaItem { }
+.metaLabel { font-size: 12px; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
+.metaValue { font-size: 15px; font-weight: 500; color: var(--text-main); }
+
+/* Benefits Section */
+.benefitsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.benefitCard { padding: 28px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.iconWrap { width: 52px; height: 52px; border-radius: 14px; background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.2); display: flex; align-items: center; justify-content: center; color: var(--accent-violet); }
+
+@media (max-width: 768px) {
+  .benefitsGrid { grid-template-columns: 1fr; }
+  .inputRow { flex-direction: column; }
+  .metaGrid { grid-template-columns: 1fr; }
+}
